@@ -11,10 +11,21 @@ import woottech.jpastore.domain.Address;
 import woottech.jpastore.domain.Member;
 import woottech.jpastore.service.MemberService;
 
+import java.util.List;
+
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
+
     private final MemberService memberService;
+
+    // 회원 목록 조회 컨트롤러 추가
+    @GetMapping(value = "/members")
+    public String list(Model model) {
+        List<Member> members = memberService.findMembers();
+        model.addAttribute("members", members);
+        return "members/memberList";
+    }
 
     @GetMapping(value = "/members/new")
     public String createForm(Model model) {
