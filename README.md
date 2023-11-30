@@ -58,7 +58,8 @@ void update(Item itemParam) { //itemParam: 파리미터로 넘어온 준영속 �
 
 ### 3. 병합: 기존에 있는 엔티티
 
-<img src="C:\Users\piay8\AppData\Roaming\Typora\typora-user-images\image-20231130165919698.png" alt="image-20231130165919698" style="zoom:80%;" />
+![image](https://github.com/LimdaeIl/OrderProjectWithJPA/assets/131642334/8211a04e-3e47-4932-a49d-15a2ed104d7a)
+
 
 **병합 동작 방식** 
 
