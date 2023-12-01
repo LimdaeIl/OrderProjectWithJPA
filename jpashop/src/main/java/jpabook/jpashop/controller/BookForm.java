@@ -10,6 +10,7 @@ public class BookForm {
 
     private String name;
     private int price;
+    
     private int stockQuantity;
 
     private String author;

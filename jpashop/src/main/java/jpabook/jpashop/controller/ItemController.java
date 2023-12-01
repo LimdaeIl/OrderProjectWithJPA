@@ -21,6 +21,7 @@ public class ItemController {
 
     @GetMapping("/items/new")
     public String createForm(Model model) {
+        
         model.addAttribute("form", new BookForm());
         return "items/createItemForm";
     }
